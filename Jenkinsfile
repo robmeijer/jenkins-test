@@ -12,7 +12,7 @@ pipeline {
             }
         }
         stage('Test') {
-            stages {
+            parallel {
                 stage('First Test') {
                     steps {
                         echo 'Testing first thing ...'
